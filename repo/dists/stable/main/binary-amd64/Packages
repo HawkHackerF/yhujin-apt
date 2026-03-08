@@ -1,0 +1,13 @@
+Package: yhujin
+Version: 1.0
+Architecture: amd64
+Maintainer: Yhujin
+Filename: pool/yhujin.deb
+Size: 4698444
+MD5sum: 7880012eb243334e65b73663bcce9d9e
+SHA1: 16d7a96217583e048f996eaef0d2c6b74a62d3ac
+SHA256: ce2f733cf61bbf70406c0675af008f477a70ef500405962ba66b89e2ff07099e
+Section: utils
+Priority: optional
+Description: Simple Server Manager
+
