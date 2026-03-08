@@ -23,24 +23,24 @@ Atau langsung:
 go run .
 ```
 
-Server berjalan di `http://localhost:5000`
+Server berjalan di `http://0.0.0.0:5000`
 
 ## Perubahan dari versi Python
 
-| Python (Flask)         | Go (net/http)                          |
-|------------------------|----------------------------------------|
-| `flask`                | `net/http` (stdlib)                   |
-| `psutil`               | `github.com/shirou/gopsutil/v3`       |
-| `pty` (Python)         | `github.com/creack/pty`               |
-| `humanize`             | Fungsi `naturalSize()` custom         |
-| `zipfile`, `tarfile`   | `archive/zip`, `archive/tar` (stdlib) |
-| Session Flask          | Map `termSessions` dengan mutex       |
-| `threading.Thread`     | Goroutine                             |
-| `werkzeug.secure_filename` | `filepath.Base()`               |
+| Go (net/http)                          |
+|----------------------------------------|
+| `net/http` (stdlib)                   |
+| `github.com/shirou/gopsutil/v3`       |
+| `github.com/creack/pty`               |
+| Fungsi `naturalSize()` custom         |
+| `archive/zip`, `archive/tar` (stdlib) |
+| Map `termSessions` dengan mutex       |
+| Goroutine                             |
+| `filepath.Base()`               |
 
 ## Fitur
 
-- File Manager (list, upload, download, rename, delete, hide/unhide, extract)
+- File Manager (list, upload, download, rename, delete, hide/unhide, extract, copy, cut)
 - Terminal web (PTY multi-tab)
 - Process Manager (kill process)
 - System Monitor (CPU, RAM, disk, network)
